@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  annotations:
+    imageregistry: "https://hub.docker.com/"
+  labels:
+   project: expense
+   component: backend
+#namespace: expense
+spec:
+# One POD can contain multiple containers
+  containers:
+  - name: nginx
+    image: nginx
