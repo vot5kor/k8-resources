@@ -1,5 +1,5 @@
 kind: pod
-apiVersion: V1
+apiVersion: v1
 metaData:
  name: labels
  namespace: expense
@@ -7,7 +7,7 @@ metaData:
   project: expense
   component: backend
   environment: dev
-  
+
 Spec:
  containers:
  - name: nginx
