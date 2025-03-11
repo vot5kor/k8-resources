@@ -1,13 +1,15 @@
+
 kind: Pod
 apiVersion: v1
-metaData:
- name: labels
- labels:
-  project: expense
-  component: backend
-  environment: dev
-
-Spec:
- containers:
- - name: nginx
-   image: nginx
+metadata:
+  name: multi-containers
+  labels:
+   project: expense
+   component: backend
+   environment: dev
+#namespace: expense
+spec:
+# One POD can contain multiple containers
+  containers:
+  - name: nginx
+    image: nginx
