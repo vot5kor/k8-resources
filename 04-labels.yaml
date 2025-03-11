@@ -2,7 +2,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: multi-containers
+  name: labels
   labels:
    project: expense
    component: backend
