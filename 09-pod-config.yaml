@@ -1,0 +1,12 @@
+kind: pod
+apiVersion: v1
+metadata:
+  name: pod-config
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+# attaching ConfigMap to pod
+    envFrom:
+    - configMapKeyRef:
+       name: myconfig

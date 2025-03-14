@@ -10,4 +10,9 @@ data:
 #   color.bad=yellow
 #   allow.textmode=true 
 
-
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: myconfig
+# data:
+#   key: value
