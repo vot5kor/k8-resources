@@ -1,11 +1,18 @@
-kind: configMap
-apiVersion: v1
-metadata:
- name: myconfig
-data:
- course: devops
- trainer: "siva kumar"
+# kind: configMap
+# apiVersion: v1
+# metadata:
+#  name: myconfig
+# data:
+#  course: devops
+#  trainer: "siva kumar"
 # user-interface.properties: |
 #   olor.good=purple
 #   color.bad=yellow
 #   allow.textmode=true 
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfig
+data:
+  key: value
