@@ -1,4 +1,4 @@
-kind: pod
+kind: Pod
 apiVersion: v1
 metadata:
   name: pod-config
@@ -9,4 +9,4 @@ spec:
 # attaching ConfigMap to pod
     envFrom:
     - configMapRef:
-       name: myconfig
+         name: myconfig
