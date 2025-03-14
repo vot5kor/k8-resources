@@ -1,0 +1,11 @@
+kind: configmap
+apiVersion: v1
+metadata:
+ name: myconfig
+data:
+ course: devops
+ trainer: siva kumar
+# user-interface.properties: |
+#   olor.good=purple
+#   color.bad=yellow
+#   allow.textmode=true 
