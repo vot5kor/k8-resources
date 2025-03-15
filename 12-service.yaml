@@ -6,7 +6,7 @@ spec:
   selector:  
     name: nginx
     project: expense
-    
+
   ports:
   - protocol: TCP
     port: 80
@@ -15,7 +15,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: backend
   project: expense
 
 spec:
