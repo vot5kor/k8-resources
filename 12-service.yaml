@@ -4,9 +4,8 @@ metadata:
   name: nginx
 spec:
   selector:  
-    name: nginx
     project: expense
-
+    environment: dev
   ports:
   - protocol: TCP
     port: 80
@@ -16,15 +15,15 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: backend
-  project: expense
-
+  labels:
+    project: expense
+    environment: dev
 spec:
 # One POD can contain multiple containers
   containers:
   - name: nginx
     image: nginx
-    ports:
-    - containerPort: 80
+
 
 
   
