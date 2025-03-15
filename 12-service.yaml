@@ -1,5 +1,5 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: nginx
 spec:
@@ -19,7 +19,6 @@ metadata:
     project: expense
     environment: dev
 spec:
-# One POD can contain multiple containers
   containers:
   - name: nginx
     image: nginx
