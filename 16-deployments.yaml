@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: vot5kor/deployment:1.0
+        image: vot5kor/deployment:2.0
         ports:
         - containerPort: 80
 ---
