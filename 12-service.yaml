@@ -9,17 +9,17 @@ spec:
     - protocol: TCP
       port: 80         # The port exposed by the Service
       targetPort: 8080  #target container port
-# ---
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   name: backend
-#   labels:
-#     project: expense
-# spec:
-#   containers:
-#   - name: nginx
-#     image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+  labels:
+    project: expense
+spec:
+  containers:
+  - name: nginx
+    image: nginx
 
 
 
