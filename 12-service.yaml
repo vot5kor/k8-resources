@@ -7,8 +7,8 @@ spec:
     project: expense
   ports:
     - protocol: TCP
-      port: 80         # The port exposed by the Service
-      targetPort: 8080
+      port: 80 # service port
+      targetport: 8080 #target container port
 # ---
 # apiVersion: v1
 # kind: Pod
