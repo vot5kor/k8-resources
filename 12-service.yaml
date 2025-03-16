@@ -11,17 +11,17 @@ spec:
       port: 80 # service port
       targetport: 80 #target container port
 ---
-apiVersion: v1
-kind: Pod
-metadata:
-  name: backend
-  labels:
-    project: expense
-    environment: dev
-spec:
-  containers:
-  - name: nginx
-    image: nginx
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: backend
+#   labels:
+#     project: expense
+#     environment: dev
+# spec:
+#   containers:
+#   - name: nginx
+#     image: nginx
 
 
 
