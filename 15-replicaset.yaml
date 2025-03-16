@@ -8,7 +8,7 @@ metadata:
 spec:
   # modify replicas according to your case
   replicas: 3
-  selector: # replicaset use these labels to find the pods for creating desired
+  selector: # replicaset use these labels to find the pods for creating desired number of replicas
     matchLabels:
         app: frontend
         tier: web
