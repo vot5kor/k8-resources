@@ -3,19 +3,22 @@ kind: Service
 metadata:
   name: nginx-np
 spec:
+  type: NodePort
   selector:  # labels are used to selectors
+    project: expense
     demo: np
   ports:
     - protocol: TCP
       port: 80         # The port exposed by the Service
       targetPort: 80  #target container port
-  type: NodePort
+  
 ---
 apiVersion: v1
 kind: Pod
 metadata:
   name: backend-np
   labels:
+    project: expense
     demo: np
 spec:
   containers:
