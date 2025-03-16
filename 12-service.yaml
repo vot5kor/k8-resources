@@ -8,7 +8,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80         # The port exposed by the Service
-      targetPort: 8080  #target container port
+      targetPort: 80  #target container port
 ---
 apiVersion: v1
 kind: Pod
