@@ -2,6 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: env
+  namespace: expense
 spec:
 # One POD can contain multiple containers
   containers:

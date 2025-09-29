@@ -5,7 +5,7 @@ metadata:
  namespace: expense
 data:
  course: devops
- trainer: "siva kumar"
+ trainer: "siva kumar Reddy"
 # user-interface.properties: |
 #   olor.good=purple
 #   color.bad=yellow
