@@ -6,6 +6,7 @@ metadata:
 data:
  course: devops
  trainer: "siva kumar Reddy M"
+ duration: "5 weeks"
 # user-interface.properties: |
 #   olor.good=purple
 #   color.bad=yellow
