@@ -24,18 +24,18 @@ spec:
         # ports:
         # - containerPort: 80
 ---
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: nginx
-# spec:
-#   type: LoadBalancer
-#   selector:  # labels are used to selectors
-#       app: nginx
-#       tier: frontend
-#   ports:
-#     - protocol: TCP
-#       port: 80         # The port exposed by the Service
-#       targetPort: 8080  #target container port
-#       nodePort: 31000
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  type: LoadBalancer
+  selector:  # labels are used to selectors
+      app: nginx
+      tier: frontend
+  ports:
+    - protocol: TCP
+      port: 80         # The port exposed by the Service
+      targetPort: 8080  #target container port
+      nodePort: 31000
 
