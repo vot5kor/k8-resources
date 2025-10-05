@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  namespace: expense
   labels:
     app: nginx
     tier: frontend
@@ -20,21 +21,21 @@ spec:
       containers:
       - name: nginx
         image: vot5kor/deployment:2.0
-        ports:
-        - containerPort: 80
+        # ports:
+        # - containerPort: 80
 ---
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx
-spec:
-  type: LoadBalancer
-  selector:  # labels are used to selectors
-      app: nginx
-      tier: frontend
-  ports:
-    - protocol: TCP
-      port: 80         # The port exposed by the Service
-      targetPort: 80  #target container port
-      nodePort: 31000
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx
+# spec:
+#   type: LoadBalancer
+#   selector:  # labels are used to selectors
+#       app: nginx
+#       tier: frontend
+#   ports:
+#     - protocol: TCP
+#       port: 80         # The port exposed by the Service
+#       targetPort: 8080  #target container port
+#       nodePort: 31000
 
